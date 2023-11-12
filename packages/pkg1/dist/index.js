@@ -4,7 +4,7 @@
     (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["create-app-w"] = {}));
 })(this, (function (exports) { 'use strict';
 
-    // pkg1/src/index.ts
+    // pkg1/src/index.js
     function pk1() {
         console.log('I am pk1');
     }
