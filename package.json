@@ -10,7 +10,8 @@
     "publish": "changeset publish",
     "lint": "eslint packages/**/src/ --ext .vue,.js,.ts,.jsx,.tsx --fix",
     "prettier": "prettier \"**/*.{ts,tsx}\" --parser=typescript --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "git-cz"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json,vue}": [
@@ -20,6 +21,11 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -27,12 +33,14 @@
     "@changesets/cli": "^2.26.2",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.53.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
     "prettier": "^3.0.3",
     "rollup": "2.78.0",
     "rollup-plugin-typescript2": "0.34.1",
-    "typescript": "4.9.4"
+    "typescript": "4.9.5"
   }
 }
